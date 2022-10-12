@@ -1,15 +1,15 @@
 #include "color.h"
 
 //set constructor
-color::set::set(std::initializer_list<int>_code){
-  for(auto &item:_code)
-    code.push_back(item);
+color::set::set(std::initializer_list<int>_code) : code{_code}{
+  // for(auto &item:_code)
+  //   code.push_back(item);
 }
 
 //reset constructor
-color::reset::reset(std::initializer_list<int>_code){
-  for(auto &item:_code)
-    code.push_back(item);
+color::reset::reset(std::initializer_list<int>_code) : code{_code}{
+  // for(auto &item:_code)
+  //   code.push_back(item);
 }
 
 // output stream of set class
